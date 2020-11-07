@@ -2,8 +2,8 @@ package ru.job4j.condition;
 
 public class TrgArea {
     public static double area(double a, double b, double c) {
-        double poluperimetr = (a+b+c)/2;
-        double square = Math.sqrt(poluperimetr*(poluperimetr-a)*(poluperimetr-b)*(poluperimetr-c));
+        double poluperimetr = (a + b + c) / 2;
+        double square = Math.sqrt(poluperimetr * (poluperimetr - a) * (poluperimetr - b) * (poluperimetr - c));
 
         return square;
     }
