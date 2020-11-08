@@ -30,6 +30,5 @@ public class Converter {
         System.out.println("140 rubles are " + euro + " euro.");
         System.out.println("140 rubles are " + dollars + " dollars.");
 
-        System.out.println(" ");
     }
 }
