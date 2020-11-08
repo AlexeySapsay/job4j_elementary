@@ -13,5 +13,6 @@ public class Liken {
 
         result = first == second;
         System.out.println(result);
+        System.out.println(" ");
     }
 }
