@@ -8,9 +8,6 @@ public class Triangle {
     }
 
     public static boolean exist(double ab, double ac, double bc) {
-        if (((ab + bc) > ac) && ((bc + ac) > ab) && ((ac + ab) > bc)) {
-            return true;
-        }
-        return false;
+        return (((ab + bc) > ac) && ((bc + ac) > ab) && ((ac + ab) > bc));
     }
 }
