@@ -2,8 +2,10 @@ package ru.job4j.condition;
 
 public class Cinema {
     public static void main(String[] args) {
-        Cinema.access(29);
-        Cinema.access(15);
+        permission(true, true);
+        permission(true, false);
+        permission(false, true);
+        permission(false, false);
     }
 
     public static void access(int age) {
@@ -12,6 +14,15 @@ public class Cinema {
             System.out.println("Welcome to the cinema!");
         } else {
             System.out.println("It's not for you! Go home boy");
+        }
+    }
+
+    @SuppressWarnings("checkstyle:SimplifyBooleanExpression")
+    public static void permission(boolean allowByParent, boolean hasMoney) {
+        if (allowByParent && hasMoney) {
+            System.out.println("I can go to the cinema.");
+        } else {
+            System.out.println("I can't.");
         }
     }
 }
