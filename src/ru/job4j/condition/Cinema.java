@@ -17,7 +17,6 @@ public class Cinema {
         }
     }
 
-    @SuppressWarnings("checkstyle:SimplifyBooleanExpression")
     public static void permission(boolean allowByParent, boolean hasMoney) {
         if (allowByParent && hasMoney) {
             System.out.println("I can go to the cinema.");
