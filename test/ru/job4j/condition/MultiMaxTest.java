@@ -24,4 +24,10 @@ public class MultiMaxTest {
         int result = MultiMax.max(1, 2, 4);
         assertThat(result, is(4));
     }
+
+    @Test
+    public void whenThirdAndFirstEquvalentMax() {
+        int result = MultiMax.max(4, 2, 4);
+        assertThat(result, is(4));
+    }
 }
