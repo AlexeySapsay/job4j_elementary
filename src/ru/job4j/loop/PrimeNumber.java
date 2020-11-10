@@ -8,6 +8,7 @@ public class PrimeNumber {
                 count += 1;
             }
         }
+
         return count;
     }
 }
