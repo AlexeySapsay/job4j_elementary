@@ -8,8 +8,6 @@ public class Mortgage {
             amount = (int) (amount + amount * percent * 0.01) - salary;
             year += 1;
         }
-        System.out.println(amount);
-        System.out.println(year);
         return year;
     }
 }
