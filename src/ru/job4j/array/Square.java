@@ -6,6 +6,7 @@ public class Square {
         for (int i = 0; i < bound; i++) {
             rst[i] = i * i;
         }
+
         return rst;
     }
 
