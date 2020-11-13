@@ -29,4 +29,15 @@ public class MatrixCheck {
         return rsl;
     }
 
+    //for socoban
+    public static boolean isWin(char[][] board) {
+        int indexElement = 0;
+        for (int index = 0; index < 5; index++) {
+            if (board[index][index] == 'X') {
+                indexElement = index;
+                break;
+            }
+        }
+        return ((monoHorizontal(board, indexElement)) || (monoVertical(board, indexElement)));
+    }
 }
