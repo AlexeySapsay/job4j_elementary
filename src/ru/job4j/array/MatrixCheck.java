@@ -32,7 +32,7 @@ public class MatrixCheck {
     //for socoban
     public static boolean isWin(char[][] board) {
         int indexElement = 0;
-        for (int index = 0; index < 5; index++) {
+        for (int index = 0; index < board.length; index++) {
             if (board[index][index] == 'X') {
                 indexElement = index;
                 break;
