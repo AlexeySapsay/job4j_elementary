@@ -14,7 +14,7 @@ public class Defragment {
                 }
                 swap(array, point, notNull);
             }
-            System.out.print(array[index] + " ");
+            //System.out.print(array[index] + " ");
         }
         return array;
     }
