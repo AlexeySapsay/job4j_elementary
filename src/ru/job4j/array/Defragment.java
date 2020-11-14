@@ -2,22 +2,19 @@ package ru.job4j.array;
 
 public class Defragment {
     public static String[] compress(String[] array) {
-        int nullIndex = 0;
-        int wordIndex = 0;
-
-        for (int counter = 0; counter < array.length; counter++) {
-            for (int index = 0; index < array.length; index++) {
-                if (array[index] == null) {
-                    nullIndex = index; //point to null index
-                } else {
-                    wordIndex = index;
+        int notNull = 0;
+        for (int index = 0; index < array.length; index++) {
+            if (array[index] == null) {
+                int point = index; /* указатель на null ячейку. */
+                for (int i = index + 1; i < array.length; i++) {
+                    if (array[i] != null) {
+                        notNull = i;
+                        break;
+                    }
                 }
-                if (nullIndex < wordIndex) {
-                    swap(array, nullIndex, wordIndex);
-                    index = 0;
-                }
-                //System.out.println(array[index] + " ");
+                swap(array, point, notNull);
             }
+            System.out.print(array[index] + " ");
         }
         return array;
     }
@@ -27,7 +24,7 @@ public class Defragment {
         String[] compressed = compress(input);
         System.out.println();
         for (int index = 0; index < compressed.length; index++) {
-            System.out.println(compressed[index] + " ");
+            System.out.print(compressed[index] + " ");
         }
     }
 
