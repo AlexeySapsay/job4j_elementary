@@ -14,6 +14,7 @@ public class IndexOfWithCount {
                 }
             }
         }
+
         return -1;
     }
 }
