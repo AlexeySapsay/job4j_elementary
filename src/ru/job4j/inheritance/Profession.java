@@ -15,6 +15,12 @@ public class Profession {
         this.birthday = birthday;
     }
 
+    public Profession(int salary, int dataGigabyte, int server) {
+    }
+
+    public Profession(int giveATerabyteData, int giveComputer) {
+    }
+
     //bloc Getters initialize
     public String getName() {
         return name;
@@ -35,9 +41,5 @@ public class Profession {
     public int getBirthday() {
         return birthday;
     }
-
-    //bloc Setter initialize
-    // nope, not yet.
-
 
 }
