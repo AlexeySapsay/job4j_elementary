@@ -7,6 +7,14 @@ public class Profession {
     private String profession;
     private int birthday;
 
+    public Profession(String name, String surname, String education, String profession, int birthday) {
+        this.name = name;
+        this.surname = surname;
+        this.education = education;
+        this.profession = profession;
+        this.birthday = birthday;
+    }
+
     //bloc Getters initialize
     public String getName() {
         return name;
@@ -30,4 +38,6 @@ public class Profession {
 
     //bloc Setter initialize
     // nope, not yet.
+
+
 }
