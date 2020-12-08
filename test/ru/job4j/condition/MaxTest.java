@@ -42,4 +42,9 @@ public class MaxTest {
         int result = Max.max(0, -1, -2, -3);
         assertThat(result, is(0));
     }
+
+    @Test
+    public void whenNegativeNumber() {
+        assertThat(Max.max(-10, -1), is(-1));
+    }
 }

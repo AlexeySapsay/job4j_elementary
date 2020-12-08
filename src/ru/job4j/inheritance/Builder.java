@@ -5,6 +5,7 @@ public class Builder extends Engineer {
     private int salaryPerHour;
 
     public Builder(int jobHours, int salaryPerHour) {
+        super(jobHours, salaryPerHour);
         this.jobHours = jobHours;
         this.salaryPerHour = salaryPerHour;
     }
