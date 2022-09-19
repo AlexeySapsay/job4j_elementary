@@ -8,7 +8,6 @@ public class X2Test {
 
     @Test
     public void whenA10B9C0X2Then40() {
-        // input parametrs for tests
         int a = 10;
         int b = 0;
         int c = 0;

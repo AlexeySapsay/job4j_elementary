@@ -21,7 +21,6 @@ public class Profession {
     public Profession(int giveATerabyteData, int giveComputer) {
     }
 
-    //bloc Getters initialize
     public String getName() {
         return name;
     }

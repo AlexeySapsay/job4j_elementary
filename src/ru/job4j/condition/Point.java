@@ -1,8 +1,5 @@
 package ru.job4j.condition;
 
-//import java.lang.Math.sqrt;
-//import java.lang.Math.pow;
-
 public class Point {
 
     private int x;

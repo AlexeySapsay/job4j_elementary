@@ -109,7 +109,7 @@ public class MatrixCheckTest {
         assertThat(result, is(expect));
     }
 
-// tests for socoban
+    /*tests for socoban*/
     @Test
     public void whenDataMonoByTrueThenTrue() {
         char[][] input = {

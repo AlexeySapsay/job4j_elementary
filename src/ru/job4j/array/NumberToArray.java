@@ -16,9 +16,7 @@ public class NumberToArray {
 
         for (int index = 0; index < strInt.length(); index++) {
             String strBuffer = strInt.substring(index, index + 1);
-            // convert string to int
             int intBuffer = Integer.valueOf(strBuffer);
-            //revers arrayInt
             arrayInt[strInt.length() - index - 1] = intBuffer;
         }
         return arrayInt;
