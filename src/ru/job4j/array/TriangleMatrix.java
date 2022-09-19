@@ -5,7 +5,7 @@ public class TriangleMatrix {
         int[][] triangle = new int[count][];
         for (int i = 0; i < count; i++) {
             for (int j = 0; j < count + i; j++) {
-
+                System.out.println("hi!");
             }
         }
         return triangle;

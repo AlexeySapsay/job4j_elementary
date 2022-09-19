@@ -4,9 +4,9 @@ public class EvenSumElements {
     public static boolean checkArray(int[] data) {
         int sum = 0;
 
-        for (int index = 0; index < data.length; index++) {
-            sum += data[index];
+        for (int datum : data) {
+            sum += datum;
         }
-        return (sum % 2 == 0 ? true : false);
+        return (sum % 2 == 0);
     }
 }
