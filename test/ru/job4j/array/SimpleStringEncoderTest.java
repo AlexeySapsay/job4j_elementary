@@ -31,6 +31,14 @@ class SimpleStringEncoderTest {
     }
 
     @Test
+    void whenStringaaaaaaThenResulta6() {
+        String input = "aaaaaa";
+        String expected = "a6";
+        String result = SimpleStringEncoder.encode(input);
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
     void whenStringabbcccThenResulta2b3c() {
         String input = "abbccc";
         String expected = "ab2c3";
